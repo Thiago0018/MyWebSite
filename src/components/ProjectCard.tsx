@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { type Project } from '../types/project';
 
 export const ProjectCard: React.FC<Project> = ({
@@ -11,6 +11,9 @@ export const ProjectCard: React.FC<Project> = ({
     demoUrl,
     githubUrl,
 }) => {
+    // Estado para controlar o toggle da descrição
+    const [isExpanded, setIsExpanded] = useState(false);
+
     const formattedImageUrl = imageUrl
         ? imageUrl.startsWith('http')
             ? imageUrl
@@ -40,12 +43,12 @@ export const ProjectCard: React.FC<Project> = ({
                     )}
                 </div>
 
-                {/* Título & Descrição */}
+                {/* Título */}
                 <h3 className="text-xl font-bold text-[#0b192c] group-hover:text-blue-600 transition-colors">
                     {title}
                 </h3>
 
-                {/* Preview do Projeto*/}
+                {/* Preview do Projeto */}
                 {formattedImageUrl && (
                     hasDemo ? (
                         <a
@@ -96,9 +99,28 @@ export const ProjectCard: React.FC<Project> = ({
                         </div>
                     )
                 )}
-                <p className="text-slate-600 text-sm leading-relaxed mt-2 mb-5">
-                    {description}
-                </p>
+
+                {/* Descrição com Toggle (Ler mais / Mostrar menos) */}
+                <div className="mt-2 mb-5">
+                    <p className={`text-slate-600 text-sm leading-relaxed transition-all duration-300 ${!isExpanded ? 'line-clamp-2' : ''}`}>
+                        {description}
+                    </p>
+                    <button
+                        type="button"
+                        onClick={() => setIsExpanded(!isExpanded)}
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-800 transition-colors mt-1.5 focus:outline-none cursor-pointer"
+                    >
+                        <span>{isExpanded ? 'Mostrar menos' : 'Ler descrição completa'}</span>
+                        <svg
+                            className={`w-3.5 h-3.5 transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`}
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                </div>
 
             </div>
 
@@ -145,6 +167,6 @@ export const ProjectCard: React.FC<Project> = ({
                     </a>
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
