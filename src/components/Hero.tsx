@@ -1,37 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 export const Hero: React.FC = () => {
-    const [scrollY, setScrollY] = useState(0);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrollY(window.scrollY);
-        };
-
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
     const bgUrl = `${import.meta.env.BASE_URL}hero-bg.jpg`;
 
     return (
-        <section id="inicio" className="relative min-h-162.5 h-[88vh] w-full overflow-hidden flex items-center bg-[#060e1a]">
+        <section id="inicio" className="relative min-h-150 h-[85vh] max-h-212.5 w-full overflow-hidden flex items-center bg-[#060e1a]">
+            {/* Imagem de Fundo Estática, com Zoom de Ajuste e Ancorada na Base */}
             <div
-                className="absolute inset-0 w-full h-[120%] bg-cover bg-position-[90%_center] md:bg-position-[right_center] bg-no-repeat pointer-events-none transition-transform duration-75 ease-out"
+                className="absolute inset-0 w-full h-full bg-no-repeat bg-cover bg-position-[85%_bottom] md:bg-bottom-right lg:bg-size-[110%_auto] lg:bg-[position:bottom-right"
                 style={{
                     backgroundImage: `url('${bgUrl}')`,
-                    transform: `translateY(${scrollY * 0.3}px)`,
                 }}
             />
 
-            <div className="absolute inset-0 bg-linear-to-r from-[#060e1a] via-[#060e1a]/85 md:via-[#060e1a]/70 to-transparent" />
+            {/* Overlay gradiente suave para leitura do texto à esquerda */}
+            <div className="absolute inset-0 bg-linear-to-r from-[#060e1a] via-[#060e1a]/90 md:via-[#060e1a]/60 to-transparent" />
 
             {/* Conteúdo da Hero */}
             <div className="relative z-10 max-w-6xl mx-auto px-6 w-full">
                 <div className="max-w-xl space-y-6">
 
                     <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-500/10 border border-blue-400/20 text-sky-300 text-xs font-light tracking-widest uppercase backdrop-blur-sm">
-                        <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse"></span>
                         Desenvolvedor .NET & Full Stack
                     </div>
 
