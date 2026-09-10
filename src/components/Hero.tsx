@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
                     </h1>
 
                     <p className="text-xl md:text-2xl font-extralight text-slate-200 tracking-wide">
-                        Construindo soluções robustas com <span className="font-normal text-white">.NET</span> e <span className="font-normal text-white">React + TS</span>.
+                        Soluções sólidas com <span className="font-normal text-white">.NET</span> e <span className="font-normal text-white">React + TS</span>.
                     </p>
 
                     <p className="text-slate-300 font-light text-sm md:text-base leading-relaxed tracking-wide max-w-md">
@@ -42,7 +42,6 @@ export const Hero: React.FC = () => {
                             className="inline-flex items-center gap-2 px-7 py-3 bg-blue-600 hover:bg-blue-500 text-white font-normal text-sm rounded-lg shadow-lg shadow-blue-600/30 hover:shadow-blue-500/40 transition-all border border-blue-400/30 backdrop-blur-sm"
                         >
                             <span>Ver Projetos</span>
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                         </a>
 
                         <a
