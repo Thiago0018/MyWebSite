@@ -15,7 +15,7 @@ export const CTASection: React.FC = () => {
                     </div>
 
                     <a
-                        href="mailto:seu-email@gmail.com"
+                        href="https://www.linkedin.com/in/thiago-souza0018/"
                         className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-medium text-xs md:text-sm rounded-lg transition-all whitespace-nowrap"
                     >
                         <span>Entrar em Contato</span>
@@ -27,7 +27,7 @@ export const CTASection: React.FC = () => {
                     <p>© {new Date().getFullYear()} Thiago de Souza. Todos os direitos reservados.</p>
                     <div className="flex gap-5">
                         <a href="https://github.com/Thiago0018" target="_blank" rel="noreferrer" className="hover:text-slate-300 transition-colors">GitHub</a>
-                        <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-slate-300 transition-colors">LinkedIn</a>
+                        <a href="mailto:thiago.dev.0018@gmail.com" target="_blank" rel="noreferrer" className="hover:text-slate-300 transition-colors">E-mail</a>
                     </div>
                 </div>
 

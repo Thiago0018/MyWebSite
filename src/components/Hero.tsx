@@ -4,7 +4,7 @@ export const Hero: React.FC = () => {
     const baseUrl = import.meta.env.BASE_URL || '/';
 
     return (
-        <section className="relative w-full overflow-hidden bg-[#0b111e]">
+        <section id="inicio" className="relative w-full overflow-hidden bg-[#0b111e]">
             <div className="block md:hidden w-full">
                 <div
                     className="w-full h-[65vh] min-h-95 max-h-130 bg-no-repeat bg-cover bg-top"
@@ -22,13 +22,13 @@ export const Hero: React.FC = () => {
                     </p>
                     <div className="mt-6 flex flex-col gap-3">
                         <a
-                            href="#projects"
+                            href="#projetos"
                             className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-500 transition-colors"
                         >
                             Ver Projetos
                         </a>
                         <a
-                            href="#contact"
+                            href={"#contato"}
                             className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-gray-300 bg-gray-800/80 border border-gray-700/60 rounded-lg hover:bg-gray-800 transition-colors"
                         >
                             Entrar em Contato
@@ -60,13 +60,13 @@ export const Hero: React.FC = () => {
                         </p>
                         <div className="mt-8 flex items-center gap-4">
                             <a
-                                href="#projects"
+                                href="#projetos"
                                 className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-500 transition-colors"
                             >
                                 Ver Projetos
                             </a>
                             <a
-                                href="#contact"
+                                href="#contato"
                                 className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-gray-300 bg-gray-800/80 border border-gray-700/60 rounded-lg hover:bg-gray-800 transition-colors"
                             >
                                 Entrar em Contato
