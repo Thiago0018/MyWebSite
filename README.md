@@ -24,7 +24,7 @@ Portfólio web desenvolvido para apresentar meus projetos, competências técnic
 
 - **Frontend:** React 19, TypeScript, Tailwind CSS
 - **Bundler:** Vite
-- **Hospedagem & Deploy:** GitHub Pages
+- **Hospedagem & Deploy:** Vercel
 
 ---
 
