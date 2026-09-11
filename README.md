@@ -1,75 +1,36 @@
-# React + TypeScript + Vite
+# 💻 Portfólio Pessoal — Thiago de Souza
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 
-Currently, two official plugins are available:
+Portfólio web desenvolvido para apresentar meus projetos, competências técnicas e trajetória como **Desenvolvedor .NET & Full Stack**. Construído com foco em código limpo, alta performance, design responsivo (Mobile-First) e estética *Dark Mode* sobria.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🌐 **Acesse a aplicação no ar:** [thiago0018.github.io/Profile-WebSite](https://thiago0018.github.io/Profile-WebSite/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Destaques do Projeto
 
-## Expanding the ESLint configuration
+- **Arquitetura Componentizada:** Construída em React com TypeScript puro para forte tipagem e fácil manutenção.
+- **Design Responsivo & Mobile-First:** Experiência otimizada para dispositivos móveis, tablets e telas widescreen.
+- **Estética Grafite/Marinho:** Interface sobria inspirada nos melhores padrões de UI/UX modernos.
+- **Integração de Projetos:** Exibição interativa dos meus projetos reais com links de demonstração ao vivo e repositórios.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tecnologias Utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Frontend:** React 19, TypeScript, Tailwind CSS
+- **Bundler:** Vite
+- **Hospedagem & Deploy:** GitHub Pages
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
-```
+## 📬 Contato & Conexão
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+- **Desenvolvedor:** Thiago de Souza
+- **E-mail:** [thiago.dev.0018@gmail.com](mailto:thiago.dev.0018@gmail.com)
+- **LinkedIn:** [linkedin.com/in/thiagodesouza](https://linkedin.com)
+- **GitHub:** [github.com/Thiago0018](https://github.com/Thiago0018)

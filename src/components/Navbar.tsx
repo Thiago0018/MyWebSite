@@ -2,13 +2,14 @@ import React from 'react';
 
 export const Navbar: React.FC = () => {
     const logoUrl = `${import.meta.env.BASE_URL}logoheader.png`;
+    const cvUrl = `${import.meta.env.BASE_URL}curriculo.pdf`;
 
     return (
         <header className="sticky top-0 z-50 bg-[#0c1017]/95 backdrop-blur-md border-b border-[#1f2937]">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
 
                 {/* Logo Personalizada */}
-                <a href="#inicio" className="flex items-center gap-2.5 font-bold text-white hover:opacity-80 transition-opacity">
+                <a href={"#inicio"} className="flex items-center gap-2.5 font-bold text-white hover:opacity-80 transition-opacity">
                     <img
                         src={logoUrl}
                         alt="Thiago de Souza Logo"
@@ -19,7 +20,7 @@ export const Navbar: React.FC = () => {
                     </span>
                 </a>
 
-                {/* Links de Navegação (Desktop) */}
+                {/* Links de Navegação*/}
                 <nav className="hidden md:flex items-center gap-8 font-normal text-slate-400 text-sm">
                     <a href="#inicio" className="hover:text-white transition-colors">Início</a>
                     <a href="#projetos" className="hover:text-white transition-colors">Projetos</a>
@@ -28,8 +29,10 @@ export const Navbar: React.FC = () => {
 
                 {/* Botão Download CV */}
                 <a
-                    href="/curriculo.pdf"
-                    download
+                    href={cvUrl}
+                    download="Curriculo_Thiago_de_Souza.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-1.5 text-xs font-medium text-slate-200 bg-[#181f2a] hover:bg-[#222a38] rounded-md transition-all border border-[#2b3544]"
                 >
                     <svg className="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
