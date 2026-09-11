@@ -7,7 +7,7 @@
 
 Portfólio web desenvolvido para apresentar meus projetos, competências técnicas e trajetória como **Desenvolvedor .NET & Full Stack**. Construído com foco em código limpo, alta performance, design responsivo (Mobile-First) e estética *Dark Mode* sobria.
 
-🌐 **Acesse a aplicação no ar:** [thiago0018.github.io/Profile-WebSite](https://thiago0018.github.io/Profile-WebSite/)
+🌐 **Acesse a aplicação no ar:** [thiago0018.github.io/Profile-WebSite](https://my-web-site-jade-omega.vercel.app/)
 
 ---
 
